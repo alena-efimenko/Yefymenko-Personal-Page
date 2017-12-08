@@ -1,0 +1,416 @@
+header {
+  background-image: url("../images/pencil.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, .sidebar p, article p, .recent-posts a:link, .recent-posts a:visited, h4, h3, .button, .modal-header, form, h6, .content, .auth-error {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 2em;
+  /* 2em=24px*/
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-size: 4em;
+  /* 4em=48px*/
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+h3, h4, .avatar, .sidebar p, article p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+h3, h4 {
+  font-size: 1.3em;
+}
+
+h3 {
+  text-align: center;
+}
+
+.user {
+  position: absolute;
+  top: 2%;
+  left: 95%;
+}
+
+.modal-header {
+  height: 150px;
+  background-color: #4e4e58;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* header for input"Login" in modal form*/
+
+.btn-login {
+  margin-top: 50px;
+}
+
+h5 {
+  padding-top: 60px;
+  letter-spacing: 7px;
+}
+
+.modal-body input, .modal-body label, .modal-body button {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input {
+  border: solid 1px #ccc;
+}
+
+input.error {
+  /*border: solid 1px #FF0000;*/
+}
+
+.auth-error {
+  background-color: salmon;
+  margin-top: 40px;
+  color: white;
+  text-align: center;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 30%;
+  height: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -400px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -400px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+/* The Close Button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-flow: row;
+}
+
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  height: auto;
+}
+
+.sidebar, .blog {
+  margin-top: 100px;
+  margin-left: 10%;
+}
+
+.blog {
+  margin-right: 10%;
+}
+
+.sidebar {
+  width: 40%;
+  margin-bottom: 100px;
+}
+
+.sidebar p, article p, .content {
+  font-size: 0.9em;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.sidebar, .blog article, .content {
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+}
+
+a:not(.ordinary) {
+  border-bottom: 1px dashed #aaa;
+  text-decoration: none;
+}
+
+.recent-posts a:link, .recent-posts a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.recent-posts a:link {
+  display: block;
+  padding: 20px;
+}
+
+a:hover, .recent-posts a:hover {
+  color: blue;
+}
+
+article {
+  margin-bottom: 5%;
+}
+
+time {
+  padding: 10px 20px 10px 20px;
+  display: block;
+}
+
+.button, footer img {
+  -webkit-transition: transform .25s;
+  -moz-transition: transform .25s;
+  -ms-transition: transform .25s;
+  -o-transition: transform .25s;
+  transition: transform .25s;
+}
+
+footer, button {
+  background-color: #4e4e58;
+}
+
+button {
+  padding: 15px 24px;
+  color: white;
+  margin: 20px;
+  letter-spacing: 1px;
+  border: none;
+}
+
+button:hover:enabled, footer a:hover {
+  transform: translateY(3px);
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #d3d3d3
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  padding-left: 20px;
+}
+
+h6 {
+  font-size: 1.7em;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.post-time {
+  margin-left: 14%;
+}
+
+.content {
+  margin: 1% 15% 0 15%;
+  padding: 30px;
+}
+
+code pre {
+  padding: 20px;
+  border: 0.5px dashed black;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+}
+
+.btn {
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+
+/*====------ media queries ----======*/
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575px) {
+  header {
+    height: 300px;
+  }
+  h1 {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 150%;
+  }
+  .user {
+    width: 20px;
+    left: 93%;
+  }
+  main {
+    display: block;
+  }
+  .sidebar {
+    width: 80%;
+    margin-top: 10%;
+    height: 650px;
+  }
+  .recent-posts {
+    visibility: hidden;
+  }
+  .avatar {
+    max-width: 50%;
+  }
+  h3, h4 {
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: bold;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+  time {
+    font-size: 12px;
+  }
+  h6 {
+    font-size: 15px;
+    padding: 0px;
+    margin-right: 10px;
+    line-height: 150%;
+    font-weight: bold;
+    margin: 5%;
+  }
+  .content {
+    box-shadow: none;
+    padding: 0;
+    margin: 1% 5% 0 5%;
+  }
+  .post-time {
+    padding: 0;
+    margin: 5%
+  }
+  code pre {
+    overflow-x: auto;
+    padding: 0;
+  }
+  button {
+    padding: 10px 15px;
+  }
+  .btn {
+    margin: 5%;
+  }
+  .modal-content {
+    width: 80%;
+  }
+  .modal-header {
+    height: 70px;
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  .modal-body input, .modal-body label, .modal-body button {
+    padding: 7px;
+    font-size: 14px;
+  }
+  h5 {
+    padding-top: 30px;
+  }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/*// Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  ...
+}
+
+/*// Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  ...
+}

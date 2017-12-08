@@ -1,0 +1,24 @@
+body {
+  background-color: #4e4e58;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50% -50%);
+}
+
+.fa {
+  font-size: 300px;
+}
+
+.fa-cogs {
+  color: white;
+  margin: 150px 0 150px 150px;
+}
