@@ -319,10 +319,10 @@ code pre {
     height: 300px;
   }
   h1 {
-    font-size: 17px;
+    font-size: 1em;
   }
   h2 {
-    font-size: 20px;
+    font-size: 2em;
     text-align: center;
     line-height: 150%;
   }
@@ -401,7 +401,42 @@ code pre {
 
 /*// Small devices (landscape phones, 576px and up)*/
 
-@media (min-width: 576px) and (max-width: 767px) {}
+@media (min-width: 576px) and (max-width: 767px) {
+  h1 {
+    font-size: 1.3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  header {
+    height: 300px;
+  }
+  main {
+    display: block;
+  }
+  .sidebar {
+    width: 80%;
+    margin: 10%
+  }
+  .blog {
+    margin-right: 2%
+  }
+  .avatar {
+    max-width: 50%;
+  }
+  .user {
+    width: 30px;
+    left: 93%;
+  }
+  .recent-posts {
+    visibility: hidden;
+  }
+  h3, h4 {
+    font-size: 1em;
+    line-height: 150%;
+    font-weight: bolder;
+  }
+}
 
 /*// Medium devices (tablets, 768px and up)*/
 
