@@ -303,6 +303,7 @@ code pre {
   border: 0.5px dashed black;
   font-family: 'Roboto Mono', monospace;
   font-size: 14px;
+  overflow-x: auto;
 }
 
 .btn {
@@ -373,7 +374,6 @@ code pre {
     margin: 5%
   }
   code pre {
-    overflow-x: auto;
     padding: 0;
   }
   button {
@@ -436,16 +436,25 @@ code pre {
     line-height: 150%;
     font-weight: bolder;
   }
+  .modal-content {
+    width: 80%;
+  }
+  .modal-header {
+    height: 80px;
+    margin-bottom: 0;
+  }
+  h5 {
+    font-size: 0.8em;
+    padding-top: 30px;
+  }
+  .modal-body input, .modal-body label, .modal-body button {
+    padding: 8px;
+    font-size: 0.9em;
+  }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) and (max-width: 991px) {
-  ...
-}
-
-/*// Large devices (desktops, 992px and up)*/
-
-@media (min-width: 992px) and (max-width: 1199px) {
   ...
 }
