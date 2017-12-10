@@ -14,9 +14,6 @@ const router = new VueRouter({
   ]
 })
 
-const app = new Vue({
+const application = new Vue({
   router
 }).$mount('#app');
-
-app.DEBUG = true;
-app.API_URL = "http://localhost:5000/api";

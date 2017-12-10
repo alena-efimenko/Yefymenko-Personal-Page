@@ -358,7 +358,7 @@ code pre {
   }
   h6 {
     font-size: 15px;
-    padding: 0px;
+    padding: 0;
     margin-right: 10px;
     line-height: 150%;
     font-weight: bold;
@@ -456,5 +456,38 @@ code pre {
 /*// Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) and (max-width: 991px) {
-  ...
+  header {
+    height: 400px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 3em;
+    text-align: center;
+  }
+  h3, h4 {
+    font-size: 1em;
+    line-height: 150%;
+    font-weight: bold;
+  }
+  .sidebar {
+    margin: 50px 10px 20px 20px;
+    padding: 0;
+  }
+  .blog {
+    margin: 50px 20px;
+    padding: 0;
+  }
+  .user {
+    width: 30px;
+  }
+  .recent-posts {
+    font-size: 0.9em;
+    line-height: 150%;
+  }
+  h6 {
+    font-size: 1.4em;
+    padding: 0;
+  }
 }
